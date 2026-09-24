@@ -7,479 +7,116 @@
 <meta name="theme-color" content="#f5e9df">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%92%85%3C/text%3E%3C/svg%3E">
 <title>Narly Rozo | Hair &amp; Nails Studio</title>
-</head>
-<body>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Parisienne&family=Poppins:wght@300;400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap">
 <style>
   :root{
-    --cream:#f5e9df;
-    --paper:#ffffff;
-    --blush:#e8a7b8;
-    --blush-soft:#dcc7b5;
-    --rose:#e8a7b8;
-    --rose-deep:#7b5a59;
-    --rose-deep-ink:#5c4443;
-    --gold:#bfa091;
-    --gold-soft:#dcc7b5;
-    --ink:#7b5a59;
-    --ink-soft:#957873;
-    --ink-faint:#bea9a3;
-    --line:#e3d4cb;
-    --shadow-sm:0 1px 2px rgba(92,68,67,.07),0 4px 14px rgba(92,68,67,.06);
-    --shadow-lg:0 8px 30px rgba(92,68,67,.14);
-    --font-script:'Parisienne',cursive;
-    --font-display:'Cormorant Garamond',Georgia,'Times New Roman',serif;
-    --font-body:'Poppins',-apple-system,'Segoe UI',sans-serif;
+    --cream:#f5e9df; --paper:#fff; --tan:#dcc7b5; --rose:#e8a7b8; --mocha:#bfa091;
+    --deep:#7b5a59; --deep-ink:#5c4443; --soft:#957873; --faint:#bea9a3; --line:#e3d4cb;
+    --display:'Cormorant Garamond',Georgia,serif; --body:'Poppins',-apple-system,'Segoe UI',sans-serif;
   }
   *{box-sizing:border-box}
   html{scroll-behavior:smooth}
   @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-  body{
-    margin:0;
-    background:var(--cream);
-    color:var(--ink);
-    font-family:var(--font-body);
-    font-weight:300;
-    line-height:1.65;
-    -webkit-font-smoothing:antialiased;
-    overflow-x:hidden;
-  }
-  img{max-width:100%;display:block}
-  a{color:inherit}
-  h1,h2,h3{font-family:var(--font-display);text-wrap:balance;margin:0;color:var(--rose-deep-ink);font-weight:600}
-  p{margin:0}
-  .container{max-width:1120px;margin:0 auto;padding:0 1.5rem}
-  section{padding:5.5rem 0;scroll-margin-top:5.5rem}
-  @media (max-width:640px){section{padding:4rem 0}}
+  body{margin:0;background:var(--cream);color:var(--deep);font-family:var(--body);font-weight:300;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  h1,h2,h3,p{margin:0}
+  h2{font-family:var(--display);font-size:clamp(1.8rem,5vw,2.4rem);font-weight:600;color:var(--deep-ink);margin-bottom:1.6rem;text-wrap:balance}
+  .wrap{max-width:720px;margin:0 auto;padding:0 1.4rem}
+  section{padding:3.5rem 0;scroll-margin-top:4.5rem}
 
-  .eyebrow{
-    font-family:var(--font-script);
-    font-size:1.5rem;
-    color:var(--rose);
-    margin:0 0 .1rem;
-    line-height:1;
-  }
-  .kicker{
-    font-family:var(--font-body);
-    font-size:.7rem;
-    letter-spacing:.22em;
-    text-transform:uppercase;
-    color:var(--gold);
-    font-weight:600;
-    margin:0 0 .6rem;
-  }
-  h2{font-size:clamp(1.9rem,4.5vw,2.7rem);margin-bottom:.6rem}
-  .lede{color:var(--ink-soft);max-width:56ch;font-size:1rem;font-weight:300}
-  .section-head{margin-bottom:2.75rem}
-  .section-head.center{text-align:center;margin-left:auto;margin-right:auto}
-  .section-head.center .lede{margin-left:auto;margin-right:auto}
-  .divider{display:flex;align-items:center;justify-content:center;gap:.9rem;margin:.9rem 0 0}
-  .divider .bar{width:2.75rem;height:1px;background:linear-gradient(90deg,transparent,var(--gold));}
-  .divider .bar.right{background:linear-gradient(270deg,transparent,var(--gold));}
-  .divider svg{width:14px;height:14px;color:var(--rose)}
-
-  .icon{width:1em;height:1em;display:inline-block;vertical-align:-.15em;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
-
-  /* ---------- Header ---------- */
-  header{
-    position:sticky;top:0;z-index:40;
-    background:rgba(245,233,223,.88);
-    backdrop-filter:blur(10px);
-    border-bottom:1px solid var(--line);
-  }
-  .nav-wrap{display:flex;align-items:center;justify-content:space-between;padding:.7rem 1.5rem;max-width:1120px;margin:0 auto;gap:1rem}
-  .brand{display:block;line-height:0;text-decoration:none}
-  .brand img{height:3.1rem;width:auto;display:block}
-  .hero-logo{width:min(440px,82vw);height:auto;margin:0 auto .4rem}
-  nav.primary{display:flex;align-items:center;gap:2rem}
-  nav.primary a{font-size:.82rem;letter-spacing:.03em;text-decoration:none;color:var(--ink);font-weight:500;position:relative;padding:.2rem 0}
-  nav.primary a::after{content:"";position:absolute;left:0;right:0;bottom:-3px;height:1px;background:var(--rose);transform:scaleX(0);transition:transform .2s ease}
-  nav.primary a:hover::after{transform:scaleX(1)}
-  .header-actions{display:flex;align-items:center;gap:.9rem}
-  .btn{
-    display:inline-flex;align-items:center;justify-content:center;gap:.5rem;
-    font-family:var(--font-body);font-weight:600;font-size:.86rem;letter-spacing:.02em;
-    padding:.85rem 1.6rem;border-radius:999px;border:1px solid transparent;
-    cursor:pointer;text-decoration:none;transition:transform .15s ease,box-shadow .15s ease,background .15s ease;
-  }
+  .btn{display:inline-flex;align-items:center;justify-content:center;font:600 .9rem var(--body);letter-spacing:.02em;padding:.9rem 1.8rem;border-radius:999px;border:1px solid var(--deep);text-decoration:none;cursor:pointer;transition:background .15s,transform .15s}
   .btn:active{transform:scale(.97)}
-  .btn-primary{background:var(--rose-deep);color:var(--blush-soft);box-shadow:var(--shadow-sm)}
-  .btn-primary:hover{background:var(--rose-deep-ink);box-shadow:var(--shadow-lg)}
-  .btn-primary:focus-visible,.btn-ghost:focus-visible,.btn-outline:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
-  .btn-outline{background:transparent;border-color:var(--rose-deep);color:var(--rose-deep-ink)}
-  .btn-outline:hover{background:var(--blush-soft)}
-  .btn-sm{padding:.55rem 1.1rem;font-size:.78rem}
-  .btn-header{padding:.62rem 1.35rem;font-size:.78rem}
+  .btn:focus-visible{outline:2px solid var(--deep-ink);outline-offset:3px}
+  .btn-fill{background:var(--deep);color:var(--cream)}
+  .btn-fill:hover{background:var(--deep-ink)}
+  .btn-line{background:transparent;color:var(--deep-ink)}
+  .btn-line:hover{background:var(--tan)}
+  .btn-sm{padding:.5rem 1.1rem;font-size:.78rem}
 
-  .menu-toggle{display:none;background:none;border:none;color:var(--rose-deep);cursor:pointer;padding:.4rem}
-  .menu-toggle svg{width:26px;height:26px}
+  header{position:sticky;top:0;z-index:40;background:rgba(245,233,223,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  .bar{max-width:720px;margin:0 auto;padding:.6rem 1.4rem;display:flex;align-items:center;justify-content:space-between;gap:1rem}
+  .bar img{height:2.8rem;width:auto;display:block}
+  .bar .btn{padding:.6rem 1.2rem;font-size:.78rem}
 
-  @media (max-width:880px){
-    nav.primary{
-      position:fixed;inset:0 0 0 auto;width:min(78vw,320px);height:100vh;
-      background:var(--paper);
-      flex-direction:column;align-items:flex-start;justify-content:flex-start;
-      padding:5.5rem 2rem 2rem;gap:1.6rem;
-      box-shadow:-12px 0 30px rgba(92,68,67,.15);
-      transform:translateX(100%);transition:transform .3s ease;
-    }
-    nav.primary.open{transform:translateX(0)}
-    nav.primary a{font-size:1.05rem}
-    .menu-toggle{display:inline-flex}
-    .header-actions .btn-header{padding:.55rem 1.05rem;font-size:.74rem}
-  }
+  .hero{text-align:center;padding:3rem 0 3.5rem}
+  .hero img{width:min(420px,80vw);height:auto;margin:0 auto .4rem;display:block}
+  .tagline{font-size:.75rem;letter-spacing:.28em;text-transform:uppercase;color:var(--soft);font-weight:500;margin-bottom:1.8rem}
+  .ctas{display:flex;gap:.9rem;justify-content:center;flex-wrap:wrap}
 
-  .nav-scrim{position:fixed;inset:0;background:rgba(92,68,67,.35);opacity:0;pointer-events:none;transition:opacity .3s ease;z-index:35}
-  .nav-scrim.open{opacity:1;pointer-events:auto}
+  .services{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+  .services li{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1.1rem 0;border-bottom:1px solid var(--line)}
+  .services h3{font-family:var(--display);font-size:1.3rem;font-weight:600;color:var(--deep-ink);line-height:1.2}
+  .services p{font-size:.84rem;color:var(--soft)}
+  .note{margin-top:1rem;font-size:.82rem;color:var(--soft);font-style:italic}
 
-  /* ---------- Hero ---------- */
-  .hero{
-    position:relative;
-    padding:4.5rem 0 4rem;
-    background:
-      radial-gradient(ellipse 60% 50% at 85% 0%, var(--blush) 0%, transparent 60%),
-      radial-gradient(ellipse 50% 45% at 5% 15%, var(--gold-soft) 0%, transparent 65%),
-      var(--cream);
-    text-align:center;
-    overflow:hidden;
-  }
-  .hero-inner{position:relative;z-index:1}
-  .hero .kicker{justify-content:center;display:flex}
-  .hero-word{
-    font-family:var(--font-script);
-    font-size:clamp(3.2rem,11vw,5.6rem);
-    color:var(--rose-deep);
-    line-height:1;
-    margin:.2rem 0 .1rem;
-  }
-  .hero-tagline{
-    font-family:var(--font-body);
-    font-size:.78rem;
-    letter-spacing:.28em;
-    text-transform:uppercase;
-    color:var(--gold);
-    font-weight:600;
-    margin-bottom:1.6rem;
-  }
-  .hero h1{
-    font-size:clamp(1.6rem,3.6vw,2.3rem);
-    font-weight:500;
-    font-style:italic;
-    max-width:38ch;
-    margin:0 auto 1.1rem;
-    color:var(--ink);
-  }
-  .hero p.sub{max-width:48ch;margin:0 auto 2.2rem;color:var(--ink-soft)}
-  .hero-ctas{display:flex;align-items:center;justify-content:center;gap:1.1rem;flex-wrap:wrap;margin-bottom:0}
-  .hero-ctas .btn-primary{padding:1.05rem 2.3rem;font-size:.92rem}
+  .form{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:1.6rem;display:grid;gap:1rem}
+  .row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+  @media (max-width:480px){.row{grid-template-columns:1fr}}
+  label{display:flex;flex-direction:column;gap:.35rem;font-size:.76rem;font-weight:600;color:var(--deep-ink)}
+  label i{font-weight:300;color:var(--faint)}
+  input,select,textarea{font:400 .95rem var(--body);color:var(--deep-ink);background:var(--cream);border:1px solid var(--line);border-radius:10px;padding:.75rem .85rem;width:100%}
+  input:focus,select:focus,textarea:focus{outline:none;border-color:var(--rose);box-shadow:0 0 0 3px rgba(232,167,184,.25)}
+  textarea{resize:vertical;min-height:4rem}
+  .form .btn{width:100%;padding:1.05rem;font-size:.95rem}
+  .hint{font-size:.76rem;color:var(--soft);text-align:center}
 
-  .badge-row{
-    display:flex;justify-content:center;flex-wrap:wrap;gap:1.6rem 1.3rem;
-    max-width:760px;margin:0 auto;
-  }
-  .badge{display:flex;flex-direction:column;align-items:center;gap:.55rem;width:5.4rem}
-  .badge .disc{
-    width:3.4rem;height:3.4rem;border-radius:50%;
-    background:var(--blush-soft);border:1px solid var(--line);
-    display:flex;align-items:center;justify-content:center;color:var(--rose-deep);
-    font-size:1.3rem;
-  }
-  .badge span{font-size:.62rem;letter-spacing:.04em;text-transform:uppercase;color:var(--ink-soft);text-align:center;line-height:1.3;font-weight:500}
+  .contact{list-style:none;margin:0;padding:0;display:grid;gap:.9rem}
+  .contact a{display:flex;align-items:baseline;gap:.8rem;text-decoration:none;color:var(--deep-ink);font-size:1.02rem;font-weight:400;padding:.9rem 0;border-bottom:1px solid var(--line)}
+  .contact span{font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--soft);font-weight:600;min-width:6.2rem}
+  .contact a:hover{color:var(--deep)}
+  .contact li.plain{padding:.9rem 0;font-size:1.02rem;font-weight:400;color:var(--deep-ink);display:flex;gap:.8rem;align-items:baseline}
+  .contact li.plain span{color:var(--soft)}
 
-  /* ---------- Services ---------- */
-  .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
-  @media (max-width:880px){.services-grid{grid-template-columns:repeat(2,1fr)}}
-  @media (max-width:560px){.services-grid{grid-template-columns:1fr}}
-  .service-card{
-    background:var(--paper);border:1px solid var(--line);border-radius:16px;
-    padding:1.9rem 1.6rem 1.7rem;box-shadow:var(--shadow-sm);
-    display:flex;flex-direction:column;gap:.9rem;
-    transition:box-shadow .2s ease,transform .2s ease;
-  }
-  .service-card:hover{box-shadow:var(--shadow-lg);transform:translateY(-3px)}
-  .service-icon{
-    width:3rem;height:3rem;border-radius:50%;background:var(--blush-soft);
-    display:flex;align-items:center;justify-content:center;color:var(--rose-deep);
-  }
-  .service-icon .icon{width:1.5rem;height:1.5rem}
-  .service-card h3{font-size:1.22rem;font-weight:600}
-  .service-card p.desc{color:var(--ink-soft);font-size:.9rem;flex:1}
-  .service-meta{font-size:.78rem;color:var(--gold);font-style:italic;font-family:var(--font-display);font-weight:600}
-  .service-card .btn{align-self:flex-start;margin-top:.2rem}
+  footer{padding:2rem 0 6rem;text-align:center}
+  footer img{height:3.4rem;width:auto;margin:0 auto .5rem;display:block}
+  footer p{font-size:.75rem;color:var(--soft)}
 
-  /* ---------- Gallery ---------- */
-  .gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem}
-  @media (max-width:760px){.gallery-grid{grid-template-columns:repeat(2,1fr)}}
-  .gallery-tile{
-    aspect-ratio:1/1;border-radius:14px;
-    border:1.5px dashed var(--rose);
-    background:var(--blush-soft);
-    display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.6rem;
-    color:var(--rose-deep);text-align:center;padding:1rem;
-  }
-  .gallery-tile .icon{width:1.7rem;height:1.7rem;opacity:.75}
-  .gallery-tile .cat{font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft);font-weight:600}
-  .gallery-tile .msg{font-family:var(--font-display);font-style:italic;font-size:.92rem;color:var(--rose-deep-ink)}
-  .gallery-note{
-    margin-top:1.6rem;text-align:center;color:var(--ink-soft);font-size:.85rem;font-style:italic;
-  }
-
-  /* ---------- Booking ---------- */
-  .booking-wrap{
-    background:var(--paper);border:1px solid var(--line);border-radius:22px;
-    box-shadow:var(--shadow-lg);overflow:hidden;
-    display:grid;grid-template-columns:1fr 1.35fr;
-  }
-  @media (max-width:820px){.booking-wrap{grid-template-columns:1fr}}
-  .booking-side{
-    background:linear-gradient(160deg,var(--rose-deep) 0%,var(--rose-deep-ink) 100%);
-    color:var(--blush-soft);padding:2.6rem 2.2rem;
-    display:flex;flex-direction:column;justify-content:space-between;gap:2rem;
-  }
-  .booking-side .eyebrow{color:var(--gold-soft)}
-  .booking-side h3{color:var(--blush-soft);font-size:1.5rem;margin-bottom:.6rem}
-  .booking-side p{color:rgba(220,199,181,.8);font-size:.88rem}
-  .booking-steps{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:1rem}
-  .booking-steps li{display:flex;gap:.8rem;align-items:flex-start;font-size:.85rem;color:rgba(220,199,181,.9)}
-  .booking-steps .num{
-    width:1.6rem;height:1.6rem;flex:none;border-radius:50%;border:1px solid rgba(220,199,181,.5);
-    display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:.85rem;
-  }
-  .booking-form{padding:2.6rem 2.2rem}
-  .field{display:flex;flex-direction:column;gap:.4rem;margin-bottom:1.15rem}
-  .field label{font-size:.76rem;letter-spacing:.03em;font-weight:600;color:var(--rose-deep-ink)}
-  .field label .opt{color:var(--ink-faint);font-weight:400;font-style:italic}
-  .field input,.field select,.field textarea{
-    font-family:var(--font-body);font-size:.92rem;color:var(--ink);
-    background:var(--blush-soft);border:1px solid var(--line);border-radius:10px;
-    padding:.75rem .9rem;width:100%;transition:border-color .15s ease,box-shadow .15s ease;
-  }
-  .field input:focus,.field select:focus,.field textarea:focus{
-    outline:none;border-color:var(--rose);box-shadow:0 0 0 3px rgba(232,167,184,.18);
-  }
-  .field textarea{resize:vertical;min-height:4.5rem}
-  .field-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
-  @media (max-width:480px){.field-row{grid-template-columns:1fr}}
-  .form-submit{width:100%;padding:1.05rem;font-size:.95rem;margin-top:.3rem}
-  .form-submit .icon{width:1.15rem;height:1.15rem}
-  .form-note{font-size:.76rem;color:var(--ink-faint);margin-top:.8rem;text-align:center}
-  .form-status{font-size:.82rem;color:var(--rose-deep);margin-top:.8rem;text-align:center;min-height:1.1em}
-
-  /* ---------- About ---------- */
-  .about-grid{display:grid;grid-template-columns:auto 1fr;gap:3rem;align-items:center}
-  @media (max-width:760px){.about-grid{grid-template-columns:1fr;text-align:center;gap:2rem}}
-  .about-portrait{
-    width:11rem;height:11rem;border-radius:50%;margin:0 auto;
-    background:linear-gradient(155deg,var(--blush) 0%,var(--gold-soft) 100%);
-    border:3px solid var(--paper);outline:1px solid var(--line);
-    display:flex;align-items:center;justify-content:center;flex:none;
-    box-shadow:var(--shadow-lg);
-  }
-  .about-portrait span{font-family:var(--font-script);font-size:3.4rem;color:var(--rose-deep)}
-  .about-text p{color:var(--ink-soft);margin-bottom:1rem;max-width:56ch}
-  .about-text p:last-child{margin-bottom:0}
-  @media (max-width:760px){.about-text p{margin-left:auto;margin-right:auto}}
-
-  /* ---------- Contact ---------- */
-  .contact-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem}
-  @media (max-width:880px){.contact-grid{grid-template-columns:repeat(2,1fr)}}
-  @media (max-width:480px){.contact-grid{grid-template-columns:1fr}}
-  .contact-card{
-    background:var(--paper);border:1px solid var(--line);border-radius:16px;
-    padding:1.8rem 1.4rem;text-align:center;box-shadow:var(--shadow-sm);
-    display:flex;flex-direction:column;align-items:center;gap:.7rem;
-    text-decoration:none;color:inherit;transition:box-shadow .2s ease,transform .2s ease;
-  }
-  .contact-card:hover{box-shadow:var(--shadow-lg);transform:translateY(-3px)}
-  .contact-card .cicon{
-    width:2.9rem;height:2.9rem;border-radius:50%;background:var(--blush-soft);color:var(--rose-deep);
-    display:flex;align-items:center;justify-content:center;
-  }
-  .contact-card .cicon .icon{width:1.4rem;height:1.4rem}
-  .contact-card h4{font-family:var(--font-body);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);font-weight:600;margin:0}
-  .contact-card .val{font-family:var(--font-display);font-size:1.05rem;color:var(--rose-deep-ink);font-weight:600}
-  .contact-card .sub{font-size:.78rem;color:var(--ink-faint)}
-
-  /* ---------- Footer ---------- */
-  footer.site{
-    background:var(--rose-deep-ink);color:rgba(220,199,181,.75);
-    padding:3.2rem 0 6.5rem;text-align:center;
-  }
-  footer.site .brand{width:fit-content;margin:0 auto .6rem}
-  footer.site .brand img{height:4rem}
-  footer.site .tag{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-soft);margin-bottom:1.4rem}
-  footer.site .social{display:flex;justify-content:center;gap:1rem;margin-bottom:1.6rem}
-  footer.site .social a{
-    width:2.6rem;height:2.6rem;border-radius:50%;border:1px solid rgba(220,199,181,.3);
-    display:flex;align-items:center;justify-content:center;color:rgba(220,199,181,.85);text-decoration:none;
-    transition:background .15s ease;
-  }
-  footer.site .social a:hover{background:rgba(220,199,181,.12)}
-  footer.site .social .icon{width:1.15rem;height:1.15rem}
-  footer.site .copy{font-size:.74rem;color:rgba(220,199,181,.45)}
-
-  /* ---------- Mobile floating CTA ---------- */
-  .mobile-cta{
-    display:none;position:fixed;left:0;right:0;bottom:0;z-index:50;
-    padding:.7rem 1rem calc(.7rem + env(safe-area-inset-bottom));
-    background:rgba(245,233,223,.92);backdrop-filter:blur(10px);
-    border-top:1px solid var(--line);
-  }
-  .mobile-cta .btn{width:100%;padding:1rem}
-  @media (max-width:640px){.mobile-cta{display:block}body{padding-bottom:4.6rem}}
-
-  /* ---------- Reveal on scroll ---------- */
-  .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
-  .reveal.in{opacity:1;transform:translateY(0)}
-  @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+  .float{display:none;position:fixed;left:0;right:0;bottom:0;z-index:50;padding:.7rem 1rem calc(.7rem + env(safe-area-inset-bottom));background:rgba(245,233,223,.94);backdrop-filter:blur(10px);border-top:1px solid var(--line)}
+  .float .btn{width:100%;padding:1rem}
+  @media (max-width:640px){.float{display:block}}
 </style>
+</head>
+<body>
 
-<!-- ================= HEADER ================= -->
 <header>
-  <div class="nav-wrap">
-    <a class="brand" href="#inicio" aria-label="Narly Rozo — Inicio"><img src="logo.png" alt="Narly Rozo, Hair &amp; Nails Studio"></a>
-    <nav class="primary" id="primaryNav">
-      <a href="#inicio" data-nav>Inicio</a>
-      <a href="#servicios" data-nav>Servicios</a>
-      <a href="#galeria" data-nav>Galería</a>
-      <a href="#agendar" data-nav>Agendar</a>
-      <a href="#sobre-mi" data-nav>Sobre mí</a>
-      <a href="#contacto" data-nav>Contacto</a>
-    </nav>
-    <div class="header-actions">
-      <a href="#agendar" class="btn btn-primary btn-header">Agendar Cita</a>
-      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
-        <svg class="icon" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
-      </button>
-    </div>
+  <div class="bar">
+    <a href="#inicio" aria-label="Narly Rozo, inicio"><img src="logo.png" alt="Narly Rozo, Hair &amp; Nails Studio"></a>
+    <a href="#agendar" class="btn btn-fill">Agendar Cita</a>
   </div>
 </header>
-<div class="nav-scrim" id="navScrim"></div>
 
-<!-- ================= HERO ================= -->
-<section id="inicio" class="hero">
-  <div class="container hero-inner">
-    <img class="hero-logo" src="logo.png" alt="Narly Rozo, Hair &amp; Nails Studio">
-    <p class="hero-tagline reveal in">Uñas &amp; Tratamientos Capilares</p>
-
-    <div class="hero-ctas reveal in">
-      <a href="#agendar" class="btn btn-primary">
-        <svg class="icon" viewBox="0 0 24 24"><path d="M8 2v4M16 2v4M3.5 9h17M5 5h14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z"/><path d="M8.5 14l2 2 4-4"/></svg>
-        Agendar Cita
-      </a>
-      <a href="#servicios" class="btn btn-outline">Ver servicios</a>
-    </div>
-  </div>
-</section>
-
-<!-- ================= SERVICIOS ================= -->
-<section id="servicios">
-  <div class="container">
-    <div class="section-head reveal">
-      <p class="kicker">Servicios</p>
-      <h2>Cuidado profesional para tus manos, pies y cabello</h2>
-      <p class="lede">Cada servicio se adapta a ti. Duración y precio exactos se confirman por WhatsApp al reservar — muy pronto también aquí.</p>
-    </div>
-
-    <div class="services-grid">
-      <article class="service-card reveal">
-        <div class="service-icon"><svg class="icon" viewBox="0 0 24 24"><path d="M9 3h6M10 3v3.1c0 .5-.2 1-.6 1.3L8.3 8.9c-.8.6-1.3 1.6-1.3 2.6V19a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-7.5c0-1-.5-2-1.3-2.6l-1.1-1.5c-.4-.3-.6-.8-.6-1.3V3"/><path d="M7.2 13.2h9.6"/></svg></div>
-        <h3>Manicure tradicional</h3>
-        <p class="desc">Limado, cutícula y esmalte clásico en el tono que elijas: manos cuidadas con un acabado impecable.</p>
-        <p class="service-meta">Duración y precio · por WhatsApp</p>
-        <button class="btn btn-outline btn-sm" data-service="Manicure con esmalte tradicional">Reservar</button>
-      </article>
-
-      <article class="service-card reveal">
-        <div class="service-icon"><svg class="icon" viewBox="0 0 24 24"><path d="M9 3h6M10 3v3.1c0 .5-.2 1-.6 1.3L8.3 8.9c-.8.6-1.3 1.6-1.3 2.6V19a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-7.5c0-1-.5-2-1.3-2.6l-1.1-1.5c-.4-.3-.6-.8-.6-1.3V3"/><path d="M7.2 13.2h9.6"/><path d="M16.5 4.3l.7 1.7 1.7.7-1.7.7-.7 1.7-.7-1.7-1.7-.7 1.7-.7z"/></svg></div>
-        <h3>Manicure semipermanente</h3>
-        <p class="desc">Color de alta durabilidad y brillo intenso que aguanta semanas sin perder intensidad.</p>
-        <p class="service-meta">Duración y precio · por WhatsApp</p>
-        <button class="btn btn-outline btn-sm" data-service="Manicure con esmalte semipermanente">Reservar</button>
-      </article>
-
-      <article class="service-card reveal">
-        <div class="service-icon"><svg class="icon" viewBox="0 0 24 24"><ellipse cx="12" cy="16.5" rx="5.2" ry="4"/><circle cx="7.6" cy="10.2" r="1"/><circle cx="9.8" cy="7.8" r="1.05"/><circle cx="12.3" cy="6.6" r="1.1"/><circle cx="14.8" cy="7.6" r="1"/></svg></div>
-        <h3>Pedicure tradicional</h3>
-        <p class="desc">Pedicure completa con esmalte tradicional: pies frescos, cuidados y con un acabado prolijo.</p>
-        <p class="service-meta">Duración y precio · por WhatsApp</p>
-        <button class="btn btn-outline btn-sm" data-service="Pedicure con esmalte tradicional">Reservar</button>
-      </article>
-
-      <article class="service-card reveal">
-        <div class="service-icon"><svg class="icon" viewBox="0 0 24 24"><ellipse cx="12" cy="16.5" rx="5.2" ry="4"/><circle cx="7.6" cy="10.2" r="1"/><circle cx="9.8" cy="7.8" r="1.05"/><circle cx="12.3" cy="6.6" r="1.1"/><circle cx="14.8" cy="7.6" r="1"/><path d="M17.2 4.3l.6 1.5 1.5.6-1.5.6-.6 1.5-.6-1.5-1.5-.6 1.5-.6z"/></svg></div>
-        <h3>Pedicure semipermanente</h3>
-        <p class="desc">Color duradero y resistente para pies que aguantan el ritmo del día a día sin perder brillo.</p>
-        <p class="service-meta">Duración y precio · por WhatsApp</p>
-        <button class="btn btn-outline btn-sm" data-service="Pedicure con esmalte semipermanente">Reservar</button>
-      </article>
-
-      <article class="service-card reveal">
-        <div class="service-icon"><svg class="icon" viewBox="0 0 24 24"><path d="M6 4c3 2 3 5 1.5 7.5C6 14 5.5 17 8 20"/><path d="M11 3.5c3 2.2 3 5.4 1.3 8C10.8 14 10.3 17.3 13 20.5"/><path d="M16 4.5c2.6 2 2.6 4.9 1.1 7.2-1.4 2.2-1.8 5.1.4 8"/></svg></div>
-        <h3>Keratinas</h3>
-        <p class="desc">Tratamiento alisador que nutre en profundidad, reduce el frizz y devuelve brillo al cabello.</p>
-        <p class="service-meta">Duración y precio · por WhatsApp</p>
-        <button class="btn btn-outline btn-sm" data-service="Keratinas">Reservar</button>
-      </article>
-
-      <article class="service-card reveal">
-        <div class="service-icon"><svg class="icon" viewBox="0 0 24 24"><path d="M10.5 21c-1-1.7-1.2-3-1.2-4.6 0-1.4.6-2.2.6-3.6 0-1.2-.7-1.8-.7-3.1a4.3 4.3 0 0 1 8-2.1"/><path d="M13.5 6c1.8.4 3 2 3.4 3.8.3 1.5-.2 2.6-.9 3.6"/><circle cx="15.5" cy="7.6" r=".4" fill="currentColor" stroke="none"/></svg></div>
-        <h3>Tratamientos capilares</h3>
-        <p class="desc">Rituales personalizados según lo que tu cabello necesite: hidratación, reparación y brillo.</p>
-        <p class="service-meta">Duración y precio · por WhatsApp</p>
-        <button class="btn btn-outline btn-sm" data-service="Tratamientos capilares">Reservar</button>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ================= GALERÍA ================= -->
-<section id="galeria" style="background:var(--blush-soft)">
-  <div class="container">
-    <div class="section-head reveal">
-      <p class="kicker">Galería</p>
-      <h2>Nuestros trabajos</h2>
-      <p class="lede">Esta sección se irá llenando con fotos reales de manicures, pedicures y transformaciones capilares.</p>
-    </div>
-    <div class="gallery-grid">
-      <div class="gallery-tile reveal"><svg class="icon" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7l1.5-3h5L16 7"/><circle cx="12" cy="13.5" r="3.2"/></svg><span class="cat">Uñas</span><span class="msg">Foto próxima</span></div>
-      <div class="gallery-tile reveal"><svg class="icon" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7l1.5-3h5L16 7"/><circle cx="12" cy="13.5" r="3.2"/></svg><span class="cat">Cabello</span><span class="msg">Foto próxima</span></div>
-      <div class="gallery-tile reveal"><svg class="icon" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7l1.5-3h5L16 7"/><circle cx="12" cy="13.5" r="3.2"/></svg><span class="cat">Uñas</span><span class="msg">Foto próxima</span></div>
-      <div class="gallery-tile reveal"><svg class="icon" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7l1.5-3h5L16 7"/><circle cx="12" cy="13.5" r="3.2"/></svg><span class="cat">Cabello</span><span class="msg">Foto próxima</span></div>
-      <div class="gallery-tile reveal"><svg class="icon" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7l1.5-3h5L16 7"/><circle cx="12" cy="13.5" r="3.2"/></svg><span class="cat">Uñas</span><span class="msg">Foto próxima</span></div>
-      <div class="gallery-tile reveal"><svg class="icon" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7l1.5-3h5L16 7"/><circle cx="12" cy="13.5" r="3.2"/></svg><span class="cat">Cabello</span><span class="msg">Foto próxima</span></div>
-    </div>
-    <p class="gallery-note">— envíame tus mejores fotos y las vamos agregando aquí —</p>
-  </div>
-</section>
-
-<!-- ================= AGENDAR ================= -->
-<section id="agendar">
-  <div class="container">
-    <div class="section-head center reveal">
-      <p class="kicker">Agendar cita</p>
-      <h2>Reserva tu momento de belleza</h2>
-      <p class="lede">Completa el formulario y tu solicitud se abrirá lista para enviar por WhatsApp. Coordinamos la disponibilidad exacta contigo.</p>
-    </div>
-
-    <div class="booking-wrap reveal">
-      <div class="booking-side">
-        <div>
-          <p class="eyebrow">Cómo funciona</p>
-          <h3>Así de fácil</h3>
-          <ul class="booking-steps">
-            <li><span class="num">1</span><span>Elige servicio, fecha y hora</span></li>
-            <li><span class="num">2</span><span>Deja tus datos de contacto</span></li>
-            <li><span class="num">3</span><span>Envía y confirmamos por WhatsApp</span></li>
-          </ul>
-        </div>
-        <p>Sin horario fijo: escríbeme y buscamos el momento que mejor te venga.</p>
+<main>
+  <section id="inicio" class="hero">
+    <div class="wrap">
+      <img src="logo.png" alt="Narly Rozo, Hair &amp; Nails Studio">
+      <p class="tagline">Uñas &amp; Tratamientos Capilares</p>
+      <div class="ctas">
+        <a href="#agendar" class="btn btn-fill">Agendar Cita</a>
+        <a href="#servicios" class="btn btn-line">Ver servicios</a>
       </div>
+    </div>
+  </section>
 
-      <form class="booking-form" id="bookingForm">
-        <div class="field">
-          <label for="f-servicio">Servicio</label>
-          <select id="f-servicio" required>
+  <section id="servicios">
+    <div class="wrap">
+      <h2>Servicios</h2>
+      <ul class="services">
+        <li><div><h3>Manicure tradicional</h3><p>Esmalte clásico, manos cuidadas.</p></div><button class="btn btn-line btn-sm" data-s="Manicure con esmalte tradicional">Reservar</button></li>
+        <li><div><h3>Manicure semipermanente</h3><p>Color y brillo que duran semanas.</p></div><button class="btn btn-line btn-sm" data-s="Manicure con esmalte semipermanente">Reservar</button></li>
+        <li><div><h3>Pedicure tradicional</h3><p>Pies frescos con esmalte clásico.</p></div><button class="btn btn-line btn-sm" data-s="Pedicure con esmalte tradicional">Reservar</button></li>
+        <li><div><h3>Pedicure semipermanente</h3><p>Color duradero y resistente.</p></div><button class="btn btn-line btn-sm" data-s="Pedicure con esmalte semipermanente">Reservar</button></li>
+        <li><div><h3>Keratinas</h3><p>Nutre, alisa y devuelve el brillo.</p></div><button class="btn btn-line btn-sm" data-s="Keratinas">Reservar</button></li>
+        <li><div><h3>Tratamientos capilares</h3><p>Según lo que tu cabello necesite.</p></div><button class="btn btn-line btn-sm" data-s="Tratamientos capilares">Reservar</button></li>
+      </ul>
+      <p class="note">Precio y duración: te los confirmo por WhatsApp.</p>
+    </div>
+  </section>
+
+  <section id="agendar">
+    <div class="wrap">
+      <h2>Agendar cita</h2>
+      <form class="form" id="f">
+        <label>Servicio
+          <select id="servicio" required>
             <option value="" disabled selected>Elige un servicio</option>
             <option>Manicure con esmalte tradicional</option>
             <option>Manicure con esmalte semipermanente</option>
@@ -488,207 +125,66 @@
             <option>Keratinas</option>
             <option>Tratamientos capilares</option>
           </select>
+        </label>
+        <div class="row">
+          <label>Fecha <input type="date" id="fecha" required></label>
+          <label>Hora <input type="time" id="hora" required></label>
         </div>
-        <div class="field-row">
-          <div class="field">
-            <label for="f-fecha">Fecha</label>
-            <input type="date" id="f-fecha" required>
-          </div>
-          <div class="field">
-            <label for="f-hora">Hora</label>
-            <input type="time" id="f-hora" required>
-          </div>
+        <div class="row">
+          <label>Nombre <input type="text" id="nombre" autocomplete="name" required></label>
+          <label>Teléfono <input type="tel" id="tel" autocomplete="tel" placeholder="+32 4XX XX XX XX" required></label>
         </div>
-        <div class="field">
-          <label for="f-nombre">Nombre completo</label>
-          <input type="text" id="f-nombre" placeholder="Tu nombre" required>
-        </div>
-        <div class="field-row">
-          <div class="field">
-            <label for="f-telefono">Teléfono</label>
-            <input type="tel" id="f-telefono" placeholder="+32 4XX XX XX XX" required>
-          </div>
-          <div class="field">
-            <label for="f-correo">Correo <span class="opt">(opcional)</span></label>
-            <input type="email" id="f-correo" placeholder="tu@correo.com">
-          </div>
-        </div>
-        <div class="field">
-          <label for="f-nota">Nota <span class="opt">(opcional)</span></label>
-          <textarea id="f-nota" placeholder="Algo que deba saber para tu cita..."></textarea>
-        </div>
-
-        <button type="submit" class="btn btn-primary form-submit">
-          <svg class="icon" viewBox="0 0 24 24"><path d="M8 2v4M16 2v4M3.5 9h17M5 5h14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z"/><path d="M8.5 14l2 2 4-4"/></svg>
-          Enviar solicitud por WhatsApp
-        </button>
-        <p class="form-status" id="formStatus" role="status"></p>
-        <p class="form-note">Al enviar se abrirá WhatsApp con tu solicitud lista para mandar a Narly Rozo.</p>
+        <label>Correo <i>(opcional)</i> <input type="email" id="mail" autocomplete="email"></label>
+        <button type="submit" class="btn btn-fill">Enviar por WhatsApp</button>
+        <p class="hint">Se abre WhatsApp con tu solicitud lista. Narly te confirma la cita.</p>
       </form>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ================= SOBRE MÍ ================= -->
-<section id="sobre-mi" style="background:var(--blush-soft)">
-  <div class="container">
-    <div class="about-grid reveal">
-      <div class="about-portrait"><span>NR</span></div>
-      <div class="about-text">
-        <p class="kicker">Sobre mí</p>
-        <h2>Hola, soy Narly</h2>
-        <p>Soy profesional de belleza especializada en el cuidado de uñas y tratamientos capilares. Cada cita es un espacio pensado para ti: técnica cuidada, productos de calidad y toda mi atención puesta en que salgas sintiéndote radiante.</p>
-        <p>Trabajo con cita previa en Anderlecht, adaptando los horarios a lo que mejor te funcione. Escríbeme y con gusto coordinamos tu próxima visita.</p>
-      </div>
+  <section id="contacto">
+    <div class="wrap">
+      <h2>Contacto</h2>
+      <ul class="contact">
+        <li><a href="https://wa.me/32466464953?text=Hola%20Narly%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n" target="_blank" rel="noreferrer"><span>WhatsApp</span>+32 466 46 49 53</a></li>
+        <li><a href="https://www.instagram.com/narlyrozo" target="_blank" rel="noreferrer"><span>Instagram</span>@narlyrozo</a></li>
+        <li class="plain"><span>Ubicación</span>Anderlecht · dirección exacta al confirmar tu cita</li>
+        <li class="plain"><span>Horario</span>Por cita previa</li>
+      </ul>
     </div>
-  </div>
-</section>
+  </section>
+</main>
 
-<!-- ================= CONTACTO ================= -->
-<section id="contacto">
-  <div class="container">
-    <div class="section-head center reveal">
-      <p class="kicker">Contacto</p>
-      <h2>Hablemos</h2>
-      <p class="lede">Estoy a un mensaje de distancia para resolver dudas o coordinar tu cita.</p>
-    </div>
-    <div class="contact-grid">
-      <a class="contact-card reveal" href="https://wa.me/32466464953?text=Hola%20Narly%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20%E2%9C%A8" target="_blank" rel="noreferrer">
-        <div class="cicon"><svg class="icon" viewBox="0 0 24 24"><path d="M4 20l1.4-4.1A8 8 0 1 1 9 18.6z"/><path d="M9 10.5c0 3 2.5 5.5 5.5 5.5"/></svg></div>
-        <h4>WhatsApp</h4>
-        <p class="val">+32 466 46 49 53</p>
-        <p class="sub">Escríbeme directo</p>
-      </a>
-      <a class="contact-card reveal" href="https://www.instagram.com/narlyrozo" target="_blank" rel="noreferrer">
-        <div class="cicon"><svg class="icon" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r=".6" fill="currentColor" stroke="none"/></svg></div>
-        <h4>Instagram</h4>
-        <p class="val">@narlyrozo</p>
-        <p class="sub">Sígueme ahí</p>
-      </a>
-      <a class="contact-card reveal" href="https://wa.me/32466464953?text=Hola%20Narly%2C%20%C2%BFme%20confirmas%20la%20direcci%C3%B3n%20exacta%20para%20mi%20cita%3F" target="_blank" rel="noreferrer">
-        <div class="cicon"><svg class="icon" viewBox="0 0 24 24"><path d="M12 21s7-7.6 7-12.5A7 7 0 0 0 5 8.5C5 13.4 12 21 12 21z"/><circle cx="12" cy="8.5" r="2.4"/></svg></div>
-        <h4>Ubicación</h4>
-        <p class="val">Anderlecht</p>
-        <p class="sub">Dirección exacta al confirmar tu cita, por WhatsApp</p>
-      </a>
-      <div class="contact-card reveal">
-        <div class="cicon"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg></div>
-        <h4>Horario</h4>
-        <p class="val" style="font-size:.95rem">Por cita previa</p>
-        <p class="sub">Sin horario fijo — coordinamos según disponibilidad</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= FOOTER ================= -->
-<footer class="site">
-  <div class="container">
-    <a class="brand" href="#inicio" aria-label="Narly Rozo — Inicio"><img src="logo-light.png" alt="Narly Rozo, Hair &amp; Nails Studio"></a>
-    <p class="tag">Uñas &amp; Tratamientos Capilares</p>
-    <div class="social">
-      <a href="https://wa.me/32466464953" target="_blank" rel="noreferrer" aria-label="WhatsApp"><svg class="icon" viewBox="0 0 24 24"><path d="M4 20l1.4-4.1A8 8 0 1 1 9 18.6z"/><path d="M9 10.5c0 3 2.5 5.5 5.5 5.5"/></svg></a>
-      <a href="https://www.instagram.com/narlyrozo" target="_blank" rel="noreferrer" aria-label="Instagram"><svg class="icon" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r=".6" fill="currentColor" stroke="none"/></svg></a>
-    </div>
-    <p class="copy">© 2026 Narly Rozo — Anderlecht, Bélgica</p>
+<footer>
+  <div class="wrap">
+    <img src="logo.png" alt="Narly Rozo">
+    <p>© 2026 Narly Rozo</p>
   </div>
 </footer>
 
-<!-- ================= MOBILE CTA ================= -->
-<div class="mobile-cta">
-  <a href="#agendar" class="btn btn-primary">
-    <svg class="icon" viewBox="0 0 24 24"><path d="M8 2v4M16 2v4M3.5 9h17M5 5h14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z"/><path d="M8.5 14l2 2 4-4"/></svg>
-    Agendar Cita
-  </a>
-</div>
+<div class="float"><a href="#agendar" class="btn btn-fill">Agendar Cita</a></div>
 
 <script>
-  // Mobile nav toggle
-  const menuToggle = document.getElementById('menuToggle');
-  const primaryNav = document.getElementById('primaryNav');
-  const navScrim = document.getElementById('navScrim');
-  function closeNav(){
-    primaryNav.classList.remove('open');
-    navScrim.classList.remove('open');
-    menuToggle.setAttribute('aria-expanded','false');
-  }
-  function toggleNav(){
-    const open = primaryNav.classList.toggle('open');
-    navScrim.classList.toggle('open', open);
-    menuToggle.setAttribute('aria-expanded', String(open));
-  }
-  menuToggle.addEventListener('click', toggleNav);
-  navScrim.addEventListener('click', closeNav);
-  document.querySelectorAll('[data-nav]').forEach(a => a.addEventListener('click', closeNav));
+  const $ = id => document.getElementById(id);
+  $('fecha').min = new Date().toISOString().split('T')[0];
 
-  // Reveal on scroll
-  const revealEls = document.querySelectorAll('.reveal:not(.in)');
-  if ('IntersectionObserver' in window) {
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
-    }, { threshold: 0.15 });
-    revealEls.forEach(el => io.observe(el));
-  } else {
-    revealEls.forEach(el => el.classList.add('in'));
-  }
+  document.querySelectorAll('[data-s]').forEach(b => b.addEventListener('click', () => {
+    $('servicio').value = b.dataset.s;
+    $('agendar').scrollIntoView({behavior:'smooth'});
+    setTimeout(() => $('fecha').focus({preventScroll:true}), 500);
+  }));
 
-  // Booking form
-  const form = document.getElementById('bookingForm');
-  const fServicio = document.getElementById('f-servicio');
-  const fFecha = document.getElementById('f-fecha');
-  const fHora = document.getElementById('f-hora');
-  const fNombre = document.getElementById('f-nombre');
-  const fTelefono = document.getElementById('f-telefono');
-  const fCorreo = document.getElementById('f-correo');
-  const fNota = document.getElementById('f-nota');
-  const formStatus = document.getElementById('formStatus');
+  const fecha = v => { const [y,m,d] = v.split('-').map(Number); return new Date(y,m-1,d).toLocaleDateString('es-ES',{weekday:'long',day:'numeric',month:'long',year:'numeric'}); };
+  const hora = v => { const [h,m] = v.split(':').map(Number); return ((h+11)%12+1)+':'+String(m).padStart(2,'0')+' '+(h>=12?'p.m.':'a.m.'); };
 
-  const today = new Date();
-  fFecha.min = today.toISOString().split('T')[0];
-
-  document.querySelectorAll('[data-service]').forEach(btn => {
-    btn.addEventListener('click', () => {
-      fServicio.value = btn.getAttribute('data-service');
-      document.getElementById('agendar').scrollIntoView({ behavior: 'smooth', block: 'start' });
-      setTimeout(() => fFecha.focus(), 450);
-    });
-  });
-
-  function formatFecha(value){
-    if(!value) return '';
-    const [y,m,d] = value.split('-').map(Number);
-    const dt = new Date(y, m-1, d);
-    return dt.toLocaleDateString('es-ES', { weekday:'long', day:'numeric', month:'long', year:'numeric' });
-  }
-  function formatHora(value){
-    if(!value) return '';
-    const [h,min] = value.split(':').map(Number);
-    const period = h >= 12 ? 'p.m.' : 'a.m.';
-    const h12 = ((h + 11) % 12) + 1;
-    return h12 + ':' + String(min).padStart(2,'0') + ' ' + period;
-  }
-
-  form.addEventListener('submit', function(e){
+  $('f').addEventListener('submit', e => {
     e.preventDefault();
-    if (!form.reportValidity()) return;
-
-    const lines = [
-      'Hola Narly! Quiero agendar una cita ✨',
-      '',
-      'Servicio: ' + fServicio.value,
-      'Fecha: ' + formatFecha(fFecha.value),
-      'Hora: ' + formatHora(fHora.value),
-      'Nombre: ' + fNombre.value.trim(),
-      'Teléfono: ' + fTelefono.value.trim(),
-    ];
-    if (fCorreo.value.trim()) lines.push('Correo: ' + fCorreo.value.trim());
-    if (fNota.value.trim()) lines.push('Nota: ' + fNota.value.trim());
-
-    const message = encodeURIComponent(lines.join('\n'));
-    const waUrl = 'https://wa.me/32466464953?text=' + message;
-
-    formStatus.textContent = 'Abriendo WhatsApp con tu solicitud...';
-    window.open(waUrl, '_blank', 'noreferrer');
+    if (!e.target.reportValidity()) return;
+    const l = ['Hola Narly! Quiero agendar una cita ✨','',
+      'Servicio: '+$('servicio').value,'Fecha: '+fecha($('fecha').value),'Hora: '+hora($('hora').value),
+      'Nombre: '+$('nombre').value.trim(),'Teléfono: '+$('tel').value.trim()];
+    if ($('mail').value.trim()) l.push('Correo: '+$('mail').value.trim());
+    window.open('https://wa.me/32466464953?text='+encodeURIComponent(l.join('\n')),'_blank','noreferrer');
   });
 </script>
-</body></html>
+</body>
+</html>
